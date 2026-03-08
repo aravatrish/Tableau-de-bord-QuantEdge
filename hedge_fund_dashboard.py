@@ -427,9 +427,9 @@ with r1:
     st.plotly_chart(fig_corr, use_container_width=True)
 with r2:
     scatter_data = pd.DataFrame({"x": metrics["volatility"], "y": metrics["ann_return"], "s": metrics["sharpe"], "Ticker": metrics.index})
-    fig_scatter = px.scatter(scatter_data, x="x", y="y", size=scatter_data["s"].clip(lower=0.1), color="s", text="Ticker",
-        color_continuous_scale=[[0,"#ff4d6d"],[0.5,"#4da6ff"],[1,"#00d4a0"]],
-        labels={"x": t["volatility"], "y": t["ann_return"], "s": t["sharpe"]})
+    fig_scatter = px.scatter(scatter_data, x="x", y="y", color="s", text="Ticker",
+    color_continuous_scale="Viridis",
+    labels={"x": t["volatility"], "y": t["ann_return"], "s": t["sharpe"]})
     fig_scatter.update_traces(textposition="top center", textfont=dict(size=11,color="#e8eaf0"))
     fig_scatter.update_layout(title=dict(text=t["ret_vol"], font=dict(size=13,color="#4da6ff")), **CHART_LAYOUT)
     st.plotly_chart(fig_scatter, use_container_width=True)
