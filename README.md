@@ -1,0 +1,1 @@
+This project is a financial dashboard that I downloaded and added a user interface to using Streamlit, then coded with Python. The dashboard allows users to enter multiple stock symbols and select a start date and end date to analyze historical data. It displays analytics, risk analysis, and optimizations.
