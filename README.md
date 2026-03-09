@@ -1,1 +1,2 @@
-This project is a financial dashboard that I downloaded and added a user interface to using Streamlit, then coded with Python. The dashboard allows users to enter multiple stock symbols and select a start date and end date to analyze historical data. It displays analytics, risk analysis, and optimizations.
+Ce projet est un tableau de bord financier que j'ai téléchargé et auquel j'ai ajouté une interface utilisateur à l'aide de Streamlit, puis codé avec Python. Le tableau de bord permet aux utilisateurs de saisir plusieurs symboles boursiers et de sélectionner une date de début et une date de fin afin d'analyser les données historiques. Il affiche des analyses, des analyses de risques et des optimisations.
+
